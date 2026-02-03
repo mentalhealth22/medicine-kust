@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>PILLPING | AI-Powered Medicine System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #16a34a, #4ade80, #86efac);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(18px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-20px)
+            }
+
+            100% {
+                transform: translateY(0)
+            }
+        }
+
+        .float {
+            animation: float 6s ease-in-out infinite
+        }
+
+        .card:hover {
+            transform: translateY(-12px) scale(1.05);
+            box-shadow: 0 0 50px rgba(34, 197, 94, .6);
+        }
+    </style>
+</head>
+
+<body class="bg-[#0a1f14] text-white overflow-x-hidden">
+
+    <!-- HERO -->
+    <section class="min-h-screen flex items-center justify-center text-center px-6 relative">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(34,197,94,0.35),transparent_65%)]"></div>
+
+        <div class="relative max-w-5xl">
+            <h1 class="text-6xl md:text-7xl font-extrabold mb-6">
+                <span class="gradient-text">PILLPING</span>
+            </h1>
+            <p class="text-2xl md:text-3xl font-semibold mb-4">
+                AI-Powered Medicine Reminder & Restock Management
+            </p>
+            <p class="text-gray-300 max-w-3xl mx-auto text-lg">
+                A smart healthcare solution designed for Pakistani patients to improve medication adherence,
+                prevent missed doses, and intelligently manage refills using AI, AR & predictive systems.
+            </p>
+
+            <div class="mt-10 flex flex-wrap justify-center gap-6">
+                <span class="glass px-6 py-3 rounded-xl">AI Chatbot</span>
+                <span class="glass px-6 py-3 rounded-xl">AR Recognition</span>
+                <span class="glass px-6 py-3 rounded-xl">SMS + Push Alerts</span>
+                <span class="glass px-6 py-3 rounded-xl">Caregiver Support</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="py-28 bg-white text-gray-900">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 px-8 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-6">Introduction</h2>
+                <p class="text-lg mb-4">
+                    Medication non-adherence is a serious healthcare issue in Pakistan, especially for chronic
+                    patients suffering from diabetes, heart disease, asthma, and hypertension.
+                </p>
+                <p class="text-gray-700">
+                    PILLPING addresses this challenge by combining intelligent reminders, refill forecasting,
+                    AR-based medicine recognition, multilingual AI assistance, and caregiver monitoring —
+                    all tailored for local needs.
+                </p>
+            </div>
+
+            <img class="rounded-3xl shadow-2xl float" src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88"
+                alt="medicine" />
+        </div>
+    </section>
+
+    <!-- CORE FEATURES -->
+    <section class="py-28 bg-[#0a1f14]">
+        <h2 class="text-4xl font-bold text-center mb-20">Core Features</h2>
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 px-8">
+            <div class="glass p-8 rounded-3xl card transition">
+                <i class="fa-solid fa-robot text-4xl text-green-400 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">AI Chatbot Assistance</h3>
+                <p class="text-gray-300 text-sm">
+                    Provides medication guidance, missed-dose instructions, and answers in Urdu & English.
+                </p>
+            </div>
+
+            <div class="glass p-8 rounded-3xl card transition">
+                <i class="fa-solid fa-camera text-4xl text-green-400 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">AR Medicine Recognition</h3>
+                <p class="text-gray-300 text-sm">
+                    Scan medicine packaging to identify dosage, warnings, and instructions instantly.
+                </p>
+            </div>
+
+            <div class="glass p-8 rounded-3xl card transition">
+                <i class="fa-solid fa-chart-line text-4xl text-green-400 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Smart Restock Forecasting</h3>
+                <p class="text-gray-300 text-sm">
+                    Predicts depletion, estimates cost, and alerts before medicines run out.
+                </p>
+            </div>
+
+            <div class="glass p-8 rounded-3xl card transition">
+                <i class="fa-solid fa-user-shield text-4xl text-green-400 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Caregiver Support</h3>
+                <p class="text-gray-300 text-sm">
+                    Family members can monitor dependent patients’ medication compliance.
+                </p>
+            </div>
+
+            <div class="glass p-8 rounded-3xl card transition">
+                <i class="fa-solid fa-message text-4xl text-green-400 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Multi-Channel Reminders</h3>
+                <p class="text-gray-300 text-sm">
+                    Push notifications + SMS alerts for low-internet or rural areas.
+                </p>
+            </div>
+
+            <div class="glass p-8 rounded-3xl card transition">
+                <i class="fa-solid fa-language text-4xl text-green-400 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Multi-Lingual Support</h3>
+                <p class="text-gray-300 text-sm">
+                    Designed for users with low literacy using simple language & visuals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBJECTIVES -->
+    <section class="py-28 bg-white text-gray-900">
+        <div class="max-w-6xl mx-auto px-8">
+            <h2 class="text-4xl font-bold mb-10 text-center">Objectives</h2>
+            <ul class="space-y-4 text-lg">
+                <li>✔ Improve medication adherence for Pakistani patients</li>
+                <li>✔ Predict medicine depletion before shortages occur</li>
+                <li>✔ Provide AI-based medication guidance</li>
+                <li>✔ Enable caregiver monitoring</li>
+                <li>✔ Support AR-based medicine scanning</li>
+                <li>✔ Ensure accessibility via SMS reminders</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="py-24 bg-[#0a1f14] text-center">
+        <h2 class="text-4xl font-bold mb-12">Technology Stack</h2>
+        <div class="flex flex-wrap justify-center gap-8 text-lg">
+            <span class="glass px-6 py-3 rounded-xl">Flutter</span>
+            <span class="glass px-6 py-3 rounded-xl">Firebase</span>
+            <span class="glass px-6 py-3 rounded-xl">ARCore</span>
+            <span class="glass px-6 py-3 rounded-xl">ML Kit</span>
+            <span class="glass px-6 py-3 rounded-xl">Dialogflow / AI</span>
+            <span class="glass px-6 py-3 rounded-xl">GitHub</span>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="py-24 bg-black text-center">
+        <h2 class="text-4xl font-bold mb-12">Project Team</h2>
+        <div class="flex flex-wrap justify-center gap-10">
+            <div class="glass p-6 rounded-xl w-64">
+                <p class="font-bold">Maymoonah Bibi</p>
+                <p class="text-sm text-gray-400">CS120222016</p>
+            </div>
+            <div class="glass p-6 rounded-xl w-64 border border-green-400">
+                <p class="font-bold">Mehak Saeed</p>
+                <p class="text-sm text-gray-400">CS120222017</p>
+            </div>
+            <div class="glass p-6 rounded-xl w-64">
+                <p class="font-bold">Muneeba Bibi</p>
+                <p class="text-sm text-gray-400">CS120222036</p>
+            </div>
+        </div>
+
+        <p class="mt-12 text-gray-400">
+            Supervisor: <b>Dr. Muhammad Altaf Khan</b> — Assistant Professor, Institute of Computing, KUST
+        </p>
+    </section>
+
+    <footer class="py-8 text-center text-gray-500">
+        © 2026 PILLPING · Designed as a System, Not Just an App.
+    </footer>
+
+</body>
+
+</html>
